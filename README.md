@@ -12,4 +12,6 @@ tensorrt方面，参照https://blog.csdn.net/m0_38043555/article/details/1144792
 2024.4.24  
 之前docker内torch.cuda.is_available()常常会在几天后突然变成False，一直未找出问题所在，偶然重启容器后发现其又变成True，找到了解决方法，即容器运行一段时间后重启容器。  
 
+在 https://onnx.ai/onnx/operators/index.html onnx支持算子文档中搜索，发现模型中的“stack”算子不在onnx支持范围内，且“flatten_parameters”也不在onnx的支持范围  
 
+获得了毫米波雷达算法的计算图
