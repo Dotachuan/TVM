@@ -15,3 +15,8 @@ tensorrt方面，参照https://blog.csdn.net/m0_38043555/article/details/1144792
 在 https://onnx.ai/onnx/operators/index.html onnx支持算子文档中搜索，发现模型中的“stack”算子不在onnx支持范围内，且“flatten_parameters”也不在onnx的支持范围  
 
 获得了毫米波雷达算法的计算图
+
+2024.5.25
+![image](https://github.com/Dotachuan/TVM/assets/80832042/5defb819-10ed-4b88-9734-1133b81f237f)
+由于直接运用conda无法安装一些所需要的包，因此改变conda设置，将源换成清华源。
+
