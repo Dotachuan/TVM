@@ -20,3 +20,11 @@ tensorrt方面，参照https://blog.csdn.net/m0_38043555/article/details/1144792
 ![image](https://github.com/Dotachuan/TVM/assets/80832042/5defb819-10ed-4b88-9734-1133b81f237f)  
 由于直接运用conda无法安装一些所需要的包，因此改变conda设置，将源换成清华源。
 
+2024.5.31
+由于在pytorch2.2.0环境中安装pytorch3d遇到了一些问题并且在尝试解决之后发现无法解决，因此目前在pytorch1.9.1的docker环境中进行工作，采用的pytorch3d为0.7.6  
+Sayid对代码进行了重写，并且进行了追踪，目前遇到了shape不同的问题  
+![070d94bb6b7b7e7f28ce5390e623d30](https://github.com/Dotachuan/TVM/assets/80832042/cdec0ff9-5921-4bfc-a3a2-3480f597b5fa)
+
+
+
+
