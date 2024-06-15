@@ -26,5 +26,8 @@ Sayid对代码进行了重写，并且进行了追踪，目前遇到了shape不�
 ![070d94bb6b7b7e7f28ce5390e623d30](https://github.com/Dotachuan/TVM/assets/80832042/cdec0ff9-5921-4bfc-a3a2-3480f597b5fa)
 
 
+2024.6.15
+![Y$`H2KJ _8I95{%}UC6%QZ9](https://github.com/Dotachuan/TVM/assets/80832042/3df0da9a-8dd3-42bb-918a-a04d7949e03d)  
+在尝试用TVM进行优化时遇到该BUG
 
 
