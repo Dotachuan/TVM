@@ -47,5 +47,5 @@ Sayid对代码进行了重写，并且进行了追踪，目前遇到了shape不�
 
 2024.6.20  
 ![image](https://github.com/Dotachuan/TVM/assets/80832042/9587f93f-4799-4810-91ed-54b50fddef01)  
-得到毫米波雷达模型的baseline
+得到毫米波雷达模型的baseline，横向对比之下毫米波雷达算法在TVM下的推理速度比在pytorch下的推理速度快大约一倍，但是纵向对比之下TVM的调优文件对于其预测速度提升不大，后续考虑用tvm中的ansor进行调优
 
