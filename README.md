@@ -32,8 +32,18 @@ Sayid对代码进行了重写，并且进行了追踪，目前遇到了shape不�
 
 2024.6.16
 成功用tvm对转换的onnx模型进行编译，并对其进行调优生成三个model的json文件。  
-![image](https://github.com/Dotachuan/TVM/assets/80832042/ecdd6747-02e3-4f31-a956-1c75396ac378)
+![image](https://github.com/Dotachuan/TVM/assets/80832042/ecdd6747-02e3-4f31-a956-1c75396ac378)  
 
+对调优前后的模型进行性能评测，得到以下结果：  
+![image](https://github.com/Dotachuan/TVM/assets/80832042/2326d63f-1d8a-4abf-8089-64f370c5f74d)  
+![image](https://github.com/Dotachuan/TVM/assets/80832042/908ecdf4-5026-4b3a-85ce-d692082c481f)  
+  
+![image](https://github.com/Dotachuan/TVM/assets/80832042/49c4e657-2ec2-45dc-9a6e-67c0eab78ea5)  
+![image](https://github.com/Dotachuan/TVM/assets/80832042/6e22a5f3-e34a-4c65-bb33-79bb9d189217)  
+
+![image](https://github.com/Dotachuan/TVM/assets/80832042/1e9a24c8-b0cd-4164-9c82-0601611ab8c6)  
+![image](https://github.com/Dotachuan/TVM/assets/80832042/b3f3535a-6539-40cc-8dbe-81816cb8e5ad)  
+  
 
 2024.6.20  
 ![image](https://github.com/Dotachuan/TVM/assets/80832042/9587f93f-4799-4810-91ed-54b50fddef01)  
