@@ -30,11 +30,9 @@ Sayid对代码进行了重写，并且进行了追踪，目前遇到了shape不�
 ![Y$`H2KJ _8I95{%}UC6%QZ9](https://github.com/Dotachuan/TVM/assets/80832042/3df0da9a-8dd3-42bb-918a-a04d7949e03d)  
 在尝试用TVM进行优化时遇到该BUG，查询后发现调优器xgboost版本太高，于是输入命令"pip3 install xgboost==1.5.1"将其版本降低，将问题解决。  
 
-成功用tvm对转换的onnx模型进行编译，并对其进行调优生成三个model的json文件。
+2024.6.16
+成功用tvm对转换的onnx模型进行编译，并对其进行调优生成三个model的json文件。  
 ![image](https://github.com/Dotachuan/TVM/assets/80832042/ecdd6747-02e3-4f31-a956-1c75396ac378)
-
-
-
 
 
 2024.6.20  
