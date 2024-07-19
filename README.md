@@ -47,5 +47,16 @@ Sayid对代码进行了重写，并且进行了追踪，目前遇到了shape不�
 
 2024.6.20  
 ![image](https://github.com/Dotachuan/TVM/assets/80832042/9587f93f-4799-4810-91ed-54b50fddef01)  
-得到毫米波雷达模型的baseline，横向对比之下毫米波雷达算法在TVM下的推理速度比在pytorch下的推理速度快大约一倍，但是纵向对比之下TVM的调优文件对于其预测速度提升不大，后续考虑用tvm中的ansor进行调优
+得到毫米波雷达模型的baseline，横向对比之下毫米波雷达算法在TVM下的推理速度比在pytorch下的推理速度快大约一倍，但是纵向对比之下TVM的调优文件对于其预测速度提升不大，后续考虑用tvm中的ansor进行调优 
+
+2024.7.19
+针对产生的Value error查询对应的源代码，如图所示： 
+![image](https://github.com/user-attachments/assets/b3bc8265-f93e-42cf-b204-b3062968e0f1)
+在google上查询到该问题曾经出现过，其解决方案是将相应的检查代码注释，然而按照查询的解决方案将Value检查注释后，仍然出现该error，由于根据报错无法精确定位模型的问题所在，因此想到采用另一种方法，即直接编译pytorch模型导入TVM优化（由于Sayid解决了onnx转换的问题，因此pytorch应该可以转换为torchscript再导入TVM进行编译）。
+然而出现了算子不支持的问题，即aten：copy该算子并不被TVM支持，因此直接将pytorch导入TVM进行编译需要改写相关代码，将该算子进行替代，然而error message 并未定位出该算子所在处，而王涛师兄的模型中并未找到该算子，因此不太清楚该error的定位。 
+![image](https://github.com/user-attachments/assets/05a9b031-1e6b-477a-9d45-d71251fb65ca)
+error message并未给出相关定位，因此将该问题report到TVM论坛上。
+
+
+
 
